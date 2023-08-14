@@ -1,0 +1,80 @@
+.upcoming-cards-body {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  //display: flex;
+  //justify-content: center;
+  //align-items: center;
+  //display: flex;
+  //flex-wrap: wrap;
+  margin: auto;
+  width: 980px;
+  align-items: center;
+  gap: 74px;
+}
+.card-content {
+  display: flex;
+  gap: 50px;
+}
+.card-container {
+  width: 226px;
+  height: 268.279px;
+  flex-shrink: 0;
+  display: flex;
+
+  //overflow: hidden;
+  .card-image {
+    width: 175px;
+    height: 254.522px;
+    flex-shrink: 0;
+  }
+  .book-set {
+    border: none;
+    width: 46px;
+    height: 46.095px;
+    flex-shrink: 0;
+    background-color: transparent;
+    margin-right: 10px;
+    margin-top: 34px;
+    margin-left: -18px;
+    cursor: pointer;
+  }
+  .book-fav {
+    border: none;
+    width: 29px;
+    height: 25.81px;
+    flex-shrink: 0;
+    background-color: transparent;
+    cursor: pointer;
+  }
+}
+
+.books-degree {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin-left: 120px;
+  gap: 10px;
+
+  .btn-books-degree {
+    width: 221px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 18px;
+    border: none;
+    cursor: pointer;
+    background: #f6ffa6;
+    box-shadow: 3px 4px 4px 0px rgba(207, 219, 103, 0.25) inset,
+      -4px 2px 4px 0px rgba(207, 219, 103, 0.25) inset;
+  }
+  .books-degree-title {
+    color: #372045;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

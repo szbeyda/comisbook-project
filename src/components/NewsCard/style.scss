@@ -1,0 +1,102 @@
+.news-content-body {
+  //position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.news-card-conteiner {
+  //position: relative;
+  width: 372px;
+  height: 337px;
+  flex-shrink: 0;
+  border-radius: 18px;
+  background: #e6c6d9;
+  margin-bottom: 20px;
+  overflow: hidden;
+
+  .card-title {
+    display: flex;
+    height: 30px;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .card-categori {
+    color: #620c80;
+    text-align: center;
+    font-size: 15px;
+    font-style: normal;
+    line-height: normal;
+    cursor: pointer;
+  }
+
+  .card-button {
+    border: none;
+    position: static;
+    background-color: transparent;
+    cursor: pointer;
+
+    //margin-left: 300px;
+  }
+
+  .news-card-image {
+    width: 237px;
+    height: 175px;
+    flex-shrink: 0;
+    margin-left: 45px;
+    // margin-right: 73px;
+    border-radius: 18px;
+    box-shadow: 0px 0px 0px 0px #fff76a;
+  }
+
+  .card-info-container {
+    width: 250px;
+    height: 103px;
+    display: inline-flex;
+    padding: 5px 6px 4px 5px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    //gap: 2px;
+  }
+  .news-card-title {
+    color: #620c80;
+    text-align: center;
+    //font-size: 15px;
+    font-style: normal;
+    //font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.3px;
+    margin: auto;
+  }
+  .news-card-comment {
+    width: 280px;
+    height: 50px;
+    margin: auto;
+    color: #faffd2;
+    text-align: center;
+    font-family: Bai Jamjuree;
+    //font-size: 16px;
+    font-style: normal;
+    //font-weight: 700;
+    line-height: normal;
+  }
+
+  .news-card-date {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+// .news-card-comment {
+// }
+
+// .news-card-date {
+// }
+
+// .news-content-action {
+// }

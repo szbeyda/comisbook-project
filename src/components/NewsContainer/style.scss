@@ -1,0 +1,42 @@
+/* middle-container.scss */
+
+.news-container {
+  margin-top: 100px; /* Aradaki 100px boşluğu eklemek için */
+  background-color: #35083f;
+}
+
+.news-title {
+  display: flex;
+
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  .title {
+    position: relative;
+    color: #f6ffa6;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-bottom: 50px;
+  }
+  .card-icon {
+    display: flex;
+    margin-right: 40px;
+    gap: 10px;
+    .news-settings {
+      width: 30px;
+      height: 30px;
+      flex-shrink: 0;
+      cursor: pointer;
+    }
+    .news-vektör {
+      width: 30px;
+      height: 30px;
+      flex-shrink: 0;
+      cursor: pointer;
+    }
+  }
+}

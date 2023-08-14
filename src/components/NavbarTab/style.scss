@@ -1,0 +1,131 @@
+.navbar-tab-conteiner {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  top: 20px;
+  position: sticky;
+  z-index: 999;
+  background: #d18ce0;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+}
+
+.background-bar {
+  width: 100%;
+  height: 40px;
+  border-radius: 18px;
+  background-color: rgba(141, 99, 150, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.content-container {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-link1 {
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 18px;
+  background: #f6ffa6;
+  box-shadow: -2px 0px 4px 0px #dbe67b inset;
+  color: #590a7b;
+  font-size: 16px;
+  gap: 32px;
+  margin: 0 10px;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+
+  .home-icon {
+    width: 30px;
+    height: 30px;
+    padding-top: 4px;
+    padding-left: 4px;
+  }
+  .inventory-icon {
+    width: 30px;
+    height: 30px;
+    padding-top: 4px;
+    padding-left: 4px;
+  }
+  .dashboard-icon {
+    width: 30px;
+    height: 30px;
+    padding-top: 4px;
+    padding-left: 4px;
+  }
+  .wishlist-icon {
+    width: 30px;
+    height: 30px;
+    padding-top: 4px;
+    padding-left: 4px;
+  }
+  .library-icon {
+    width: 30px;
+    height: 30px;
+    padding-top: 4px;
+    padding-left: 4px;
+  }
+  // .home-input {
+  //   //flex: auto;
+  //   border: none;
+  //   outline: none;
+  //   //padding: 8px;
+  //   font-size: 19px;
+  //   color: #5c1f6a;
+  //   //cursor: pointer;
+  // }
+}
+
+.search-box {
+  display: flex; //içeriyiortaladı justify-content: center;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 35px;
+  flex-shrink: 0;
+  border-radius: 18px;
+  background: rgba(156, 128, 163, 0.75);
+  margin: 10px auto; //yatayda ortaladı
+  position: absolute;
+  bottom: -70px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 6px;
+  text-align: center;
+
+  .search-icon {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  .search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 8px;
+    font-size: 16px;
+    color: white;
+  }
+
+  button {
+    border: none;
+    outline: none;
+    padding: 8px 16px;
+    border-radius: 18px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 8px;
+  }
+}
