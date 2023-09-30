@@ -14,7 +14,7 @@ function NewsCard() {
 
   const newsList: any = useSelector(fetchNewslists); //buradada useselector ile veriyi variable atandı.
 
-  const yeni = newsList.payload.newsList; // veri tek sıra
+  const yeni = newsList.payload.newsLists.newsLists; // veri tek sıra
   console.log("***********************");
 
   console.log(yeni);
