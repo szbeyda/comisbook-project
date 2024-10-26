@@ -1,37 +1,41 @@
 # Comics Book Projesi
 
-Bu proje, Comics Book platformunun home page tasarımını içermektedir. Projede HTML, CSS, JavaScript (ECMAScript 6+), React, SCSS, ve Redux gibi teknolojiler kullanılmıştır. Home page, main, navbar, news, upcoming, add module ve footer container yapılarını içermektedir.
+## Proje Amacı
+Kullanıcıların güncel haberleri kart formatında görüntüleyebileceği bir uygulama geliştirmek. Amaç, haberleri kolay erişilebilir ve kullanıcı dostu bir şekilde sunmaktır. 
+Bu proje, Comics Book platformunun home page tasarımını içermektedir. Projede HTML, CSS, Typescript, React, SCSS, ve Redux gibi teknolojiler kullanılmıştır. Home page, main, navbar, news, upcoming, add module ve footer container yapılarını içermektedir.
 
-## Proje Detayları
+## Kullanılan Teknolojiler
+- **React.js**: Kullanıcı arayüzünü oluşturmak için.
+- **Redux**: Global state yönetimini sağlamak için.
+- **Redux-Saga**: Asenkron veri çekme işlemlerini yönetmek için.
+- **TypeScript**: Bileşen tabanlı bir mimari oluşturmak için.
 
-- **Teknolojiler:**
-  - HTML
-  - CSS
-  - JavaScript (ECMAScript 6+)
-  - React
-  - SCSS
-  - Redux
+## Proje Yapısı
+Proje, üç ana bölüme ayrılmıştır:
+- **Bileşenler**: Her bir haber kartını render eden NewsCard bileşeni.
+- **Sayfalar**: Uygulamanın farklı sayfalarını yöneten yapı.
+- **Store**: Haberlerin state yönetiminin yapıldığı bölüm.
 
-- **Projedeki Ana Yapılar:**
-  - Main Container
-  - Navbar Container
-  - News Container
-  - Upcoming Container
-  - Add Module Container
-  - Footer Container
+## İşleyiş
+1. Kullanıcı uygulamayı açtığında, `fetchNewslists` eylemi tetikleniyor.
+2. Bu eylem, haber verilerini API'den çekiyor.
+3. Çekilen veriler, Redux store'unda saklanıyor ve NewsCard bileşeninde görüntüleniyor.
 
-- **NewsCard Bileşeni:**
-  - NewsCard, haber kartlarını göstermek için tasarlanmış bir React bileşenidir.
-  - İçerisinde newslist bileşeninden gerekli verileri çekmek ve console'da görüntülemek için Redux/Store yapısı kullanılmıştır.
+## Responsive Tasarım
+Mobil cihazlar için uyumluluğu sağlamak adına responsive bir tasarım uygulanmıştır. Haber kartları, haberin başlığı, açıklaması, kategorisi ve tarihi gibi bilgileri içermektedir.
 
-## UI Tasarım - Figma
-- ** Renk Skalası
-  - Navbar Button bg-color : #372045 / rgba(55, 32, 69, 1)
-  - Navbar-Tab Button bg-color : #F6FFA6 / rgba(246, 255, 166, 1)
-  - Navbar bg-color : #D18CE0 / rgba(209, 140, 224, 1)
-  - News Card bg-color : #35083F / rgba(53, 8, 63, 1)
-  - Upcoming Released bg-color : #620C80 / rgba(98, 12, 128, 1)
-    
+## Proje Tasarımı
+Parlak sarı, koyu mor ve parlak mor seçenekleri; bilginin çizgi roman deneyiminde dikkat çekici ve sürükleyici bir işlem yapabilmesi için uyum içinde kullanılmıştır.
+
+## Karşılaşılan Zorluklar
+- API'den veri çekerken zaman aşımı sorunları yaşandı; bu durumu yönetmek için Redux-Saga'nın `takeLatest` fonksiyonu kullanıldı.
+- Eski tasarımın verimsizliğinden dolayı yeni arayüz oluştururken zorlandım; Dribbble ve Behance gibi sitelerden trend tasarımlar incelendi.
+
+## Sonuç
+Bu proje, modern web uygulamaları geliştirme konusundaki bilgi ve becerilerimi geliştirdi. Kullanıcı dostu arayüz tasarımı ve gelişmiş front-end teknolojileriyle çalışma deneyimim, beni bu alanda daha yetkin hale getirdi.
+
+
+## Tasarım
 Proje tasarımında, parlak sarı, koyu mor ve parlak mor tonları; kullanıcının çizgi roman deneyiminde dikkat çekici ve sürükleyici bir keşif yapabilmesi için uyum içinde kullanılmışıtr.
 
 [Figma tasarımına buradan ulaşabilirsiniz.](https://www.figma.com/file/wxkJeU54yS6dsQJ1knWC5F/Untitled?type=design&node-id=0-163&mode=design&t=6H6GoTzDyAcKEQGr-0)
