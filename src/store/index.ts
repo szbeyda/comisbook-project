@@ -14,7 +14,7 @@ import createSagaMiddleware, { Task } from "redux-saga";
 import rootSaga from "./rootSaga";
 
 const bindMiddleware = (middleware: any[]) => {
-  if (process.env.NODE_ENV !== "production") {
+  if (process.env.NODE_ENV !== "production") { //app geliştirme mod -> reduxdevtools
     return composeWithDevTools(applyMiddleware(...middleware));
   }
   return applyMiddleware(...middleware);
