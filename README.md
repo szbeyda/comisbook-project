@@ -15,22 +15,6 @@ Proje, üç ana bölüme ayrılmıştır:
 - **Bileşenler**: Her bir haber kartını render eden NewsCard bileşeni.
 - **Sayfalar**: Uygulamanın farklı sayfalarını yöneten yapı.
 - **Store**: Haberlerin state yönetiminin yapıldığı bölüm.
- src/
-├── components/
-│   ├── AddModule/
-│   ├── MainContainer/
-│   ├── Navbar/
-│   ├── NewsCard/               # Haber kartlarının render edildiği component
-│   ├── NewsContainer/
-│   ├── UpcomingContainer/
-│   └── footer/
-├── pages/
-│   └── Home/                   # Ana sayfa yapısı
-├── store/
-│   ├── news/                   # Haberlerin state yönetiminin yapıldığı dosyalar (Reducer, Saga)
-│   └── rootSaga.ts             # Tüm saga dosyalarının birleştirildiği dosya
-├── App.tsx                     # Uygulamanın ana component'i
-└── index.tsx                   # React uygulamasının başlangıç dosyası
 
 
 ## İşleyiş
